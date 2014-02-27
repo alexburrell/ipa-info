@@ -1,0 +1,55 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 10px 30px;
+}
+
+h1, h2, h3, h4 {
+	font-weight: normal;
+	margin: 10px 0 0 0;
+}
+
+a {
+	color: #0E78AC;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.define, #definitions {
+	padding: 3px 3px 1px 3px;
+	background: #FFFF99;
+	border-bottom: solid 2px #FFCC33;
+}
+
+.define:hover {
+	cursor: pointer;
+	background: #FFCC33;
+}
+
+#definitions {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 150px;
+}
+
+#definition-list {
+	display: none;
+}
+
+#definition-box {
+	display: none;
+	position: absolute;
+	background: #FFF;
+	border: solid 2px #FFCC33;
+}
+
+#definition-box #close {
+	width: 20px;
+	height: 20px;
+	background: #000;
+	position: absolute;
+	right: 0;
+}
