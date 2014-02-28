@@ -1,47 +1,84 @@
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width" />
 	<title>IPA Fonts</title>
-
 	<link rel="stylesheet" type="text/css" href="ipa.css">
 </head>
 <body>
-	<h1>International Phonetic Alphabet</h1>
-	<h2>How to type it</h2>
+	<div id="container">
+		<h1>Typing the International Phonetic Alphabet</h1>
 
-	<p>Typing the IPA requires a special font that includes the required letters and <span class="define">diacritics</span>, and a keyboard layout that will give you access to all those symbols.</p>
+		<p>Typing the IPA requires a keyboard layout that will give you access to all the required letters and <span class="define">diacritics</span>. It might also help to have a special IPA font, as it will look much prettier. Observe:</p>
+		<p><img src="images/font_comparison.png" /></p>
 
-	<h3>Fonts</h3>
-	<ul>
-		<li>
-			<a href="http://www.linguistsoftware.com/liu.htm">LaserIPA</a> is $99.95, so for my purposes (just for fun, for now at least) this isn't practical.
-		</li>
-		<li>
-			<a href="http://www-01.sil.org/computing/catalog/show_software.asp?id=91">Duolos</a> is one of the few free IPA fonts provided by <a href="http://www.sil.org">SIL</a>.
-		</li>
-		<li>
-			<a href="http://www-01.sil.org/computing/catalog/show_software.asp?id=83">Gentium</a> is another SIL font.
-		</li>
-		<li>
-			<a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=CharisSIL">Charis SIL</a>, as you can guess by the name, is yet another SIL-provided font. I'm beginning to like these SIL guys!
-		</li>
-	</ul>
+		<h2 class="heading">Some available IPA fonts</h2>
+		<ul>
+			<li>
+				<a href="http://www.linguistsoftware.com/liu.htm">LaserIPA</a> is $99.95, so for my purposes (just for fun, for now at least) this isn't practical.
+			</li>
+			<li>
+				<a href="http://www-01.sil.org/computing/catalog/show_software.asp?id=91">Duolos</a> is one of the few free IPA fonts provided by <a href="http://www.sil.org">SIL</a>. <strong>This is the one I chose.</strong>
+			</li>
+			<li>
+				<a href="http://www-01.sil.org/computing/catalog/show_software.asp?id=83">Gentium</a> is another SIL font.
+			</li>
+			<li>
+				<a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=CharisSIL">Charis SIL</a>, as you can guess by the name, is yet another SIL-provided font. I'm beginning to like these SIL guys!
+			</li>
+		</ul>
 
-	<h3>Keyboards</h3>
-	<p></p>
+		<h3 class="heading">How to install a font on Mac</h3>
+		<ul>
+			<li>Download one of the above fonts (or any other font)</li>
+			<li>Open your downloads folder and find the font file</li>
+			<li>Double click it to open a little window that has an "Install Font" button</li>
+			<li>Click "Install Font"</li>
+			<li>Now go check out your new font in Word or Pages! It'll be available in any application on your computer. On Mac, there's an app called Font Book where you can see all the fonts available on your computer.</li>
+		</ul>
 
-	<p>Sources:</p>
-	<ul>
-		<li>http://www.langsci.ucl.ac.uk/ipa/ipafonts.html</li>
-		<li>http://scriptsource.org/cms/scripts/page.php?item_id=entry_detail&uid=vgkauynhzh</li>
-	</ul>
+		<h2 class="heading">Available IPA keyboard layouts</h2>
+		<ul>
+			<li><a href="http://www.tavultesoft.com/ipa/">Keyman</a> for Windows costs $24 (Light) or $69 (Professional). I don't use Windows, so I don't know much about this one. I came across it a lot though, so I think it's pretty standard.</li>
+			<li><a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=uniipakeyboard">IPA MSKLC Keyboard</a> is a free alternative for Windows.</li>
+			<li>I'm using the <a href="">IPA Unicode Macintosh Keyboard</a>, and it seems good. There are quite a few complex key combinations required to type all the different symbols, but at least I can type them!</li>
+		</ul>
+
+		<h3 class="heading">How to install a keyboard layout on Mac</h3>
+		<ul>
+			<li>Download one of the above keyboard layouts (or any keyboard layout)</li>
+			<li>Open Finder, and click on Go->Go to Folder...</li>
+			<li>Type /Library/Keyboard Layouts</li>
+			<li>Drag your .keylayout file into this folder</li>
+			<li>Open System Preferences, and go to "Keyboard"</li>
+			<li>Go to the "Input Sources" tab</li>
+			<li>Click the "+" on the bottom left to add a new input type</li>
+			<li>Scroll down to "Others", and find your new IPA keyboard layout (or if you installed a layout for a different keyboard, you might find it somewhere besides "Others")</li>
+			<li>Now if you have checked "Show Input menu in menu bar", you'll be able to go to the top left of your screen (by the time) and under the flag icon, change your keyboard to your new one. Good job!</li>
+		</ul>
+
+		<h2 class="heading">Web Fonts</h2>
+		<p><a href="http://alexburrell.com/sprints/international-phonetic-alphabet.html#february-26">I previously wrote</a> that writing the IPA on my website was going to be a problem because the characters wouldn't display unless you had the font on your computer. That's incorrect, as you can see on a <a href="http://en.wikipedia.org/wiki/Bruschetta">random Wikipedia page</a>, they show the IPA transcription and that presumably works for anyone.</p>
+
+		<p>So I'll be able to write the IPA, as you can see here: ᶚᶘ</p>
+
+		<p>But if I want it to look prettier, like the above image, I can use <a href="http://www.w3schools.com/cssref/css3_pr_font-face_rule.asp">web fonts</a> to do so. This means that I can include a font file on my site, and then use it. To do so, the font file is sent to anyone viewing the page, so this does become a little more complicated with licensing.</p>
+
+		<p>Luckily for me, the people at <a href="http://www.sil.org">SIL</a> are <em>awesome</em> and provide their Duolos font for the web too! Look how much prettier it looks when I use that: <span class="ipa">ᶚᶘ</span></p>
+
+		<footer>
+			<p>Sources:</p>
+			<ul>
+				<li><a href="http://www.langsci.ucl.ac.uk/ipa/ipafonts.html">International Phonetic Association</a></li>
+				<li><a href="http://www.sil.org">SIL International</a></li>
+				<li><a href="http://scriptsource.org/cms/scripts/page.php?item_id=entry_detail&uid=vgkauynhzh">An introduction to the IPA</a></li>
+			</ul>
+		</footer>
+	</div>
 
 	<dl id="definition-list">
-		<dt>monkey</dt>
-			<dd>what's a monkey</dd>
 		<dt>diacritics</dt>
-			<dd>what's a diacritic</dd>
-		<dt>banana</dt>
-			<dd>what's a banana</dd>
+			<dd>A glyph added to a letter, frequently above or below but sometimes within, and sometimes between two letters.</dd>
 	</dl>
 
 	<script src="jquery.js"></script>

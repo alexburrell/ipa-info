@@ -1,11 +1,20 @@
+@font-face {
+  font-family: DoulosSILW;
+  src: url(DoulosSIL-R.woff);
+}
+
 body {
 	font-family: Helvetica, Arial, sans-serif;
-	padding: 10px 30px;
+	padding: 40px 10px 10px;
+	line-height: 1.3em;
 }
 
 h1, h2, h3, h4 {
+	font-family: Georgia, serif;
 	font-weight: normal;
-	margin: 10px 0 0 0;
+	color: #6C0505;
+	margin: 20px 0 0 0;
+	line-height: 1em;
 }
 
 a {
@@ -17,10 +26,47 @@ a:hover {
 	text-decoration: underline;
 }
 
+img {
+	box-shadow: 0 2px 4px #666;
+	border-radius: 5px;
+}
+
+.ipa {
+	font-family: DoulosSILW, sans-serif;
+	font-size: 1.5em;
+}
+
+#container {
+	max-width: 800px;
+	margin: auto;
+}
+
+.heading {
+	margin-top: 40px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.heading:before {
+	font-size: 16px;
+	color: #000;
+	content: "➤";
+	position: absolute;
+	left: -5px;
+}
+
+/* FOOTER */
+footer {
+	border: solid 2px;
+	padding: 0 20px;
+	margin-top: 40px;
+}
+
+/* DEFINITIONS */
 .define, #definitions {
 	padding: 3px 3px 1px 3px;
 	background: #FFFF99;
-	border-bottom: solid 2px #FFCC33;
+	border-bottom: dotted 2px #FFCC33;
 }
 
 .define:hover {
@@ -43,7 +89,11 @@ a:hover {
 	display: none;
 	position: absolute;
 	background: #FFF;
-	border: solid 2px #FFCC33;
+	box-shadow: 0 2px 4px #666;
+	width: 160px;
+	padding: 0 20px;
+	border-radius: 5px;
+	color: #6C0505;
 }
 
 #definition-box #close {
