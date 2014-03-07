@@ -10,7 +10,10 @@
 		<h1>Symbols of the International Phonetic Alphabet</h1>
 		<p>An interactive version of the <a href="http://www.langsci.ucl.ac.uk/ipa/IPA_chart_(C)2005.pdf">official IPA chart</a></p>
 
-		<table id="ipa-chart">
+		<h2>Consonants</h2>
+		<p>Where there are 2 letters in a cell, the left is <span class="define">unvoiced</span> and the right is <span class="define">voiced</span>.</p>
+		<p>Blank areas mean there is no known language with that sound combination.<br />Gray areas mean that sound combination is deemed impossible for humans to make.</p>
+		<table class="ipa-chart">
 			<tr>
 				<td></td>
 				<th><span class="define">bilabial</span></th>
@@ -27,7 +30,7 @@
 			</tr>
 
 			<tr>
-				<th>plosive</th>
+				<th><span class="define">plosive</span></th>
 				<td class="ipa two">
 					<span class="cell letter">p</span>
 					<span class="cell letter">b</span>
@@ -66,7 +69,7 @@
 			</tr>
 
 			<tr>
-				<th>nasal</th>
+				<th><span class="define">nasal</span></th>
 				<td class="ipa two">
 					<span class="cell blank">&nbsp;</span>
 					<span class="cell letter">m</span>
@@ -75,7 +78,8 @@
 					<span class="cell blank">&nbsp;</span>
 					<span class="cell letter">ɱ</span>
 				</td>
-				<td class="ipa one" colspan="3">
+				<td class="ipa two" colspan="3">
+					<span class="cell blank">&nbsp;</span>
 					<span class="cell letter">n</span>
 				</td>
 				<td class="ipa two">
@@ -103,7 +107,7 @@
 			</tr>
 
 			<tr>
-				<th>trill</th>
+				<th><span class="define">trill</span></th>
 				<td class="ipa two">
 					<span class="cell blank">&nbsp;</span>
 					<span class="cell letter">B</span>
@@ -111,7 +115,8 @@
 				<td class="ipa one">
 					<span class="cell blank">&nbsp;</span>
 				</td>
-				<td class="ipa one" colspan="3">
+				<td class="ipa two" colspan="3">
+					<span class="cell blank">&nbsp;</span>
 					<span class="cell letter">r</span>
 				</td>
 				<td class="ipa one">
@@ -136,7 +141,7 @@
 			</tr>
 
 			<tr>
-				<th>tap or flap</th>
+				<th><span class="define">flap</span></th>
 				<td class="ipa one">
 					<span class="cell blank">&nbsp;</span>
 				</td>
@@ -144,7 +149,8 @@
 					<span class="cell blank">&nbsp;</span>
 					<span class="cell letter">ⱱ</span>
 				</td>
-				<td class="ipa one" colspan="3">
+				<td class="ipa two" colspan="3">
+					<span class="cell blank">&nbsp;</span>
 					<span class="cell letter">ɾ</span>
 				</td>
 				<td class="ipa two">
@@ -169,7 +175,7 @@
 			</tr>
 
 			<tr>
-				<th>fricative</th>
+				<th><span class="define">fricative</span></th>
 				<td class="ipa two">
 					<span class="cell letter">ɸ</span>
 					<span class="cell letter">β</span>
@@ -217,7 +223,7 @@
 			</tr>
 
 			<tr>
-				<th>lateral fricative</th>
+				<th><span class="define">lateral fricative</span></th>
 				<td class="ipa one">
 					<span class="cell impossible">&nbsp;</span>
 				</td>
@@ -249,7 +255,7 @@
 			</tr>
 
 			<tr>
-				<th>approxi-mant</th>
+				<th><span class="define">approxi-mant</span></th>
 				<td class="ipa one">
 					<span class="cell blank">&nbsp;</span>
 				</td>
@@ -257,7 +263,8 @@
 					<span class="cell blank">&nbsp;</span>
 					<span class="cell letter">ʋ</span>
 				</td>
-				<td class="ipa one" colspan="3">
+				<td class="ipa two" colspan="3">
+					<span class="cell blank">&nbsp;</span>
 					<span class="cell letter">ɹ</span>
 				</td>
 				<td class="ipa two">
@@ -284,14 +291,15 @@
 			</tr>
 
 			<tr>
-				<th>lateral approxi-mant</th>
+				<th><span class="define">lateral approx.</span></th>
 				<td class="ipa one">
 					<span class="cell impossible">&nbsp;</span>
 				</td>
 				<td class="ipa one">
 					<span class="cell impossible">&nbsp;</span>
 				</td>
-				<td class="ipa one" colspan="3">
+				<td class="ipa two" colspan="3">
+					<span class="cell blank">&nbsp;</span>
 					<span class="cell letter">l</span>
 				</td>
 				<td class="ipa two">
@@ -314,6 +322,118 @@
 				</td>
 				<td class="ipa one">
 					<span class="cell impossible">&nbsp;</span>
+				</td>
+			</tr>
+		</table>
+
+		<h2>Vowels</h2>
+		<p>Where there are 2 letters in a cell, the left is <span class="define">not rounded?</span> and the right is <span class="define">rounded</span>.</p>
+
+		<table class="ipa-chart">
+			<tr>
+				<td></td>
+				<th>Front</th>
+				<th>Central</th>
+				<th>Back</th>
+			</tr>
+			<tr>
+				<th>Closed</th>
+				<td class="ipa two">
+					<span class="cell letter">i</span>
+					<span class="cell letter">y</span>
+				</td>
+				<td class="ipa two">
+					<span class="cell letter">?</span>
+					<span class="cell letter">?</span>
+				</td>
+				<td class="ipa two">
+					<span class="cell letter">?</span>
+					<span class="cell letter">u</span>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class="ipa two">
+					<span class="cell letter">I</span>
+					<span class="cell letter">Y</span>
+				</td>
+				<td class="ipa one">
+					<span class="cell blank">&nbsp;</span>
+				</td>
+				<td class="ipa two">
+					<span class="cell blank">&nbsp;</span>
+					<span class="cell letter">?</span>
+				</td>
+			</tr>
+			<tr>
+				<th>Less closed</th>
+				<td class="ipa two">
+					<span class="cell letter">e</span>
+					<span class="cell letter">?</span>
+				</td>
+				<td class="ipa two">
+					<span class="cell letter">?</span>
+					<span class="cell letter">?</span>
+				</td>
+				<td class="ipa two">
+					<span class="cell letter">?</span>
+					<span class="cell letter">o</span>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class="ipa one">
+					<span class="cell blank">&nbsp;</span>
+				</td>
+				<td class="ipa two">
+					<span class="cell blank">&nbsp;</span>
+					<span class="cell letter">?</span>
+				</td>
+				<td class="ipa one">
+					<span class="cell blank">&nbsp;</span>
+				</td>
+			</tr>
+			<tr>
+				<th>More open</th>
+				<td class="ipa two">
+					<span class="cell letter">?</span>
+					<span class="cell letter">?</span>
+				</td>
+				<td class="ipa two">
+					<span class="cell letter">?</span>
+					<span class="cell letter">?</span>
+				</td>
+				<td class="ipa two">
+					<span class="cell letter">?</span>
+					<span class="cell letter">u</span>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class="ipa two">
+					<span class="cell blank">&nbsp;</span>
+					<span class="cell letter">?</span>
+				</td>
+				<td class="ipa two">
+					<span class="cell blank">&nbsp;</span>
+					<span class="cell letter">?</span>
+				</td>
+				<td class="ipa one">
+					<span class="cell blank">&nbsp;</span>
+				</td>
+			</tr>
+			<tr>
+				<th>Open</th>
+				<td class="ipa two">
+					<span class="cell letter">a</span>
+					<span class="cell letter">?</span>
+				</td>
+				<td class="ipa one">
+					<span class="cell blank">&nbsp;</span>
+				</td>
+				<td class="ipa two">
+					<span class="cell letter">?</span>
+					<span class="cell letter">?</span>
 				</td>
 			</tr>
 		</table>
@@ -342,6 +462,22 @@
 			<dd>A pharyngeal consonant is pronounced but putting the root of the tongue against the pharynx, in the very back of your mouth where your mouth meets your throat/nasal cavity. English doesn't have any pharyngeal consonants.<div class="references"><a href="http://en.wikipedia.org/wiki/Pharyngeal_consonant">Pharyngeal consonants on Wikipedia</a></div></dd>
 		<dt>glottal</dt>
 			<dd>Also called laryngeal consonants, these are pronounced using the glottis, the space between the vocal chords. For example, the English "h" (as in "hat") is pronounced by closing the space between the vocal chords.<div class="references"><a href="http://en.wikipedia.org/wiki/Glottal_consonant">Glottal consonants on Wikipedia</a></div></dd>
+		<dt>plosive</dt>
+			<dd>Also called a stop, this type of sound is when airflow is blocked, either using the tongue, lips, or glottis (vocal chords).<div class="references"><a href="http://en.wikipedia.org/wiki/Plosive">Plosives on Wikipedia</a></div></dd>
+		<dt>nasal</dt>
+			<dd>To produce a nasal consonant, the soft palate lowers, directing air to escape through the nose.<div class="references"><a href="http://en.wikipedia.org/wiki/Nasal_occlusive">Nasal consonants on Wikipedia</a></div></dd>
+		<dt>trill</dt>
+			<dd>A trill is produced when airflow causes the place of articulation &ndash; the column headings, either the tongue, lips, or uvula &ndash; to vibrate. A good example is the rolled "r" in Spanish.<div class="references"><a href="http://en.wikipedia.org/wiki/Trill_consonant">Trills on Wikipedia</a></div></dd>
+		<dt>flap</dt>
+			<dd>Also called a tap, this is where sound is made by the impact of the articulator (the column headings) against another part of your mouth. For example, hitting the tongue against the roof of the mouth.<div class="references"><a href="http://en.wikipedia.org/wiki/Flap_consonant">Flap consonants on Wikipedia</a></div></dd>
+		<dt>fricative</dt>
+			<dd>This sound is pronounced by restricting the airflow between the articulator (the column headings) and another part of the mouth. For example, the upper teeth against the lower lip (English "f" or "v").<div class="references"><a href="http://en.wikipedia.org/wiki/Fricative">Fricatives on Wikipedia</a></div></dd>
+		<dt>lateral fricative</dt>
+			<dd>A lateral consonant is where air flows through the sides of the mouth, with the center blocked by the tongue. A lateral fricative, then, is when this air is forced through the remaining space.<br /><br />But because these sounds aren't present in English, I'm not totally clear on what they are.<div class="references"><a href="http://en.wikipedia.org/wiki/Lateral_consonant">Lateral consonants on Wikipedia</a></div></dd>
+		<dt>approximant</dt>
+			<dd>An approximant is when articulators (the column headings) approach each other but aren't close enough to restrict airflow or cause airflow to be forced through the remaining space.<div class="references"><a href="http://en.wikipedia.org/wiki/Approximant_consonant">Approximants on Wikipedia</a></div></dd>
+		<dt>lateral approx.</dt>
+			<dd>A lateral consonant is where air flows through the sides of the mouth, with the center blocked by the tongue. A lateral approximant, then, is when the path through the center of the mouth is blocked by the tongue, but the remaining space between articulators is not restricted enough to force airflow.<div class="references"><a href="http://en.wikipedia.org/wiki/Lateral_approximant">Lateral consonants on Wikipedia</a></div></dd>
 	</dl>
 
 	<script src="jquery.js"></script>

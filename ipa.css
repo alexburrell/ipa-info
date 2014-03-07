@@ -56,31 +56,31 @@ img {
 }
 
 /* IPA table */
-#ipa-chart {
+.ipa-chart {
 	border-collapse:collapse;
 	font-size: 0.9em;
 	text-align: center;
 }
 
-#ipa-chart tr + tr {
+.ipa-chart tr + tr {
 	border-top: solid 1px #999;
 }
 
-#ipa-chart td + td,
-#ipa-chart th + th,
-#ipa-chart th + td,
-#ipa-chart td + th {
+.ipa-chart td + td,
+.ipa-chart th + th,
+.ipa-chart th + td,
+.ipa-chart td + th {
 	border-left: solid 1px #999;
 }
 
-#ipa-chart th {
+.ipa-chart th {
 	font-weight: normal;
 	max-width: 61px;
 	min-width: 61px;
 	height: 50px;
 }
 
-#ipa-chart td {
+.ipa-chart td {
 	padding: 0;
 }
 
@@ -103,10 +103,15 @@ img {
 	width: 31px;
 }
 
+.two .cell + .cell {
+	border-left: solid 1px #DFDFDF;
+	width: 30px;
+}
+
 .cell.letter {}
 
 .cell.impossible {
-	background-color: #CCC;
+	background-color: #DFDFDF;
 }
 
 .cell.blank {}
@@ -155,11 +160,12 @@ footer {
 	padding: 0 20px;
 	border-radius: 5px;
 	color: #6C0505;
+	font-size: 14px;
 }
 
 #definition-box .references {
 	margin-top: 20px;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	font-style: italic;
 	border-top: solid 1px #CCC;
 	padding-top: 5px;

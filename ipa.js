@@ -12,7 +12,7 @@ $('.define').click(function() {
 	for (var i=0; i<terms.length; i++) {
 		var term = $(terms[i]).html(),
 			clicked = $(this).html();
-		clicked = clicked.replace('-', '');
+		clicked = clicked.replace('-', '').toLowerCase();
 		if (term === clicked) {
 			word = term;
 			definition = $(definitions[i]).html();
