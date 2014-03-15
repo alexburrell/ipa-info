@@ -1,4 +1,4 @@
-{
+var ipa = {
 	"consonants": [
 		{
 			"value": "p",
@@ -254,6 +254,17 @@
 			"howToType": "= R"
 		},
 		{
+			"value": "ⱱ",
+			"looksLikeEnglish": "v",
+			"ipaNumber": 184,
+			"placeOfArticulation": "labiodental",
+			"mannerOfArticulation": "flap",
+			"voiced": true,
+			"pulmonic": true,
+			"lateral": false,
+			"howToType": "< v"
+		},
+		{
 			"value": "ɾ",
 			"looksLikeEnglish": "r",
 			"ipaNumber": 124,
@@ -365,7 +376,7 @@
 		},
 		{
 			"value": "ʃ",
-			"looksLikeEnglish": "S",
+			"looksLikeEnglish": "s",
 			"ipaNumber": 134,
 			"placeOfArticulation": "postalveolar",
 			"mannerOfArticulation": "fricative",
@@ -409,7 +420,7 @@
 		},
 		{
 			"value": "ʝ",
-			"looksLikeEnglish": "c",
+			"looksLikeEnglish": "j",
 			"ipaNumber": 139,
 			"placeOfArticulation": "palatal",
 			"mannerOfArticulation": "fricative",
@@ -1056,7 +1067,7 @@
 		},
 		{
 			"value": "ɶ",
-			"looksLikeEnglish": "O",
+			"looksLikeEnglish": "E",
 			"position": 2,
 			"openness": 7,
 			"rounded": true,
@@ -1081,9 +1092,189 @@
 			"ipaNumber": 313,
 			"howToType": "= o"
 		}
+	],
+	"diacritics": [
+		{
+			"value": "ˈ",
+			"meaning": "primary stress",
+			"ipaNumber": 501,
+			"type": "suprasegmental",
+			"howToType": "> |"
+		},
+		{
+			"value": "ˌ",
+			"meaning": "secondary stress",
+			"ipaNumber": 502,
+			"type": "suprasegmental",
+			"howToType": "< |"
+		},
+		{
+			"value": "ː",
+			"meaning": "long vowel",
+			"ipaNumber": 503,
+			"type": "suprasegmental",
+			"howToType": "= :"
+		},
+		{
+			"value": "ˑ",
+			"meaning": "half-long vowel",
+			"ipaNumber": 504,
+			"type": "suprasegmental",
+			"howToType": "< :"
+		},
+		{
+			"value": "̆",
+			"meaning": "extra-short vowel",
+			"ipaNumber": 505,
+			"type": "suprasegmental",
+			"howToType": "@ *"
+		},
+		{
+			"value": ".",
+			"meaning": "syllable break",
+			"ipaNumber": 506,
+			"type": "suprasegmental",
+			"howToType": "."
+		},
+		{
+			"value": "‿",
+			"meaning": "no break",
+			"ipaNumber": 509,
+			"type": "suprasegmental",
+			"howToType": "= #"
+		},
+		{
+			"value": "̋",
+			"meaning": "extra high",
+			"ipaNumber": 512,
+			"type": "tone",
+			"howToType": "@ 4"
+		},
+		{
+			"value": "́",
+			"meaning": "high",
+			"ipaNumber": 513,
+			"type": "tone",
+			"howToType": "@ 3"
+		},
+		{
+			"value": "̄",
+			"meaning": "mid",
+			"ipaNumber": 514,
+			"type": "tone",
+			"howToType": "@ 2"
+		},
+		{
+			"value": "̀",
+			"meaning": "low",
+			"ipaNumber": 515,
+			"type": "tone",
+			"howToType": "@ 1"
+		},
+		{
+			"value": "̏",
+			"meaning": "extra low",
+			"ipaNumber": 516,
+			"type": "tone",
+			"howToType": "@ 0"
+		},
+		{
+			"value": "̌",
+			"meaning": "rising",
+			"ipaNumber": 524,
+			"type": "tone",
+			"howToType": "@ 5"
+		},
+		{
+			"value": "̂",
+			"meaning": "falling",
+			"ipaNumber": 525,
+			"type": "tone",
+			"howToType": "@ ^"
+		},
+		{
+			"value": "᷄",
+			"meaning": "high rising",
+			"ipaNumber": 526,
+			"type": "tone",
+			"howToType": "@ 6"
+		},
+		{
+			"value": "᷅",
+			"meaning": "low rising",
+			"ipaNumber": 527,
+			"type": "tone",
+			"howToType": "@ 7"
+		},
+		{
+			"value": "᷈",
+			"meaning": "rising-falling",
+			"ipaNumber": 528,
+			"type": "tone",
+			"howToType": "@ ["
+		},
+		{
+			"value": "ꜜ",
+			"meaning": "downstep",
+			"ipaNumber": 517,
+			"type": "tone",
+			"howToType": "# ["
+		},
+		{
+			"value": "ꜛ",
+			"meaning": "upstep",
+			"ipaNumber": 518,
+			"type": "tone",
+			"howToType": "# ]"
+		},
+		{
+			"value": "↗",
+			"meaning": "global rise",
+			"ipaNumber": 510,
+			"type": "tone",
+			"howToType": "# }"
+		},
+		{
+			"value": "↘",
+			"meaning": "global fall",
+			"ipaNumber": 511,
+			"type": "tone",
+			"howToType": "# {"
+		},
+		{
+			"value": "̥",
+			"meaning": "voiceless",
+			"ipaNumber": 402,
+			"type": "articulation",
+			"howToType": "& %"
+		},
+		{
+			"value": "̬",
+			"meaning": "voiced",
+			"ipaNumber": 403,
+			"type": "articulation",
+			"howToType": "& 5"
+		},
+		{
+			"value": "ʰ",
+			"meaning": "aspirated",
+			"ipaNumber": 404,
+			"type": "articulation",
+			"howToType": "^ h"
+		},
+		{
+			"value": "̤",
+			"meaning": "breathy voice",
+			"ipaNumber": 405,
+			"type": "articulation",
+			"howToType": "& \""
+		},
+		{
+			"value": "̰",
+			"meaning": "creaky voice",
+			"ipaNumber": 406,
+			"type": "articulation",
+			"howToType": "& ~"
+		}
 	]
 }
-
-
-
-

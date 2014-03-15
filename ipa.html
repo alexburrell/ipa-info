@@ -1,0 +1,108 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<title>International Phonetic Alphabet</title>
+	<link rel="stylesheet" type="text/css" href="ipa.css">
+</head>
+<body>
+	<div id="container">
+		<h1>Symbols of the International Phonetic Alphabet</h1>
+
+		<div id="characters"></div>
+
+		<script type="text/mustache" id="characters-template">
+			<div id="selected"></div>
+
+			<ul id="types">
+				<li>Consonants</li>
+				<li>Vowels</li>
+				<li>Diacritics</li>
+			</ul>
+
+			<div>
+				{{#characters}}
+				<span class="ipa character" id="c{{ipaNumber}}">{{value}}</span>
+				{{/characters}}
+			</div>
+		</script>
+
+		<script type="text/mustache" id="selected-template">
+		<div class="selected-character ipa">{{value}}</div>
+		<ul class="details">
+			{{#placeOfArticulation}}
+			<li><span class="define">{{placeOfArticulation}}</span></li>
+			{{/placeOfArticulation}}
+			{{#mannerOfArticulation}}
+			<li>{{mannerOfArticulation}}</li>
+			{{/mannerOfArticulation}}
+			{{#voiced}}
+			<li>voiced</li>
+			{{/voiced}}
+			<li>
+				<div class="label">How to type:</div>
+				<div class="value"><code>{{howToType}}</code></div>
+			</li>
+		</ul>
+		</script>
+	</div>
+
+	<dl id="definition-list">
+		<dt>bilabial</dt>
+			<dd>This is a consonant that you use both lips to pronounce. Try the "m" sound in "man" or "p" in "pat".<div class="references"><a href="http://en.wikipedia.org/wiki/Bilabial_consonant">Bilabial consonants on Wikipedia</a></div></dd>
+		<dt>labiodental</dt>
+			<dd>This is a consonant that you use your lower lip and upper teeth to pronounce. Think the "f" or "v" sound in English.<div class="references"><a href="http://en.wikipedia.org/wiki/Labiodental_consonant">Labiodental consonants on Wikipedia</a></div></dd>
+		<dt>dental</dt>
+			<dd>This is a consonant that is pronounced by putting your tongue against (under) your upper teeth. Try the "th" sound in "think".<div class="references"><a href="http://en.wikipedia.org/wiki/Dental_consonant">Dental consonants on Wikipedia</a></div></dd>
+		<dt>alveolar</dt>
+			<dd>This is a consonant pronounced by taking the tip of your tongue and putting it on the roof of your mouth right behind your front teeth. Try the "n" sound in "run" or "l" in "luck".<br /><br />It's called this because the alveolar ridge is that area behind your front teeth on the roof of your mouth.<div class="references"><a href="http://en.wikipedia.org/wiki/Alveolar_consonant">Alveolar consonants on Wikipedia</a></div></dd>
+		<dt>post alveolar</dt>
+			<dd>This is a consonant pronounced with your tongue touching (or almost touching) the roof of your mouth, but behind where it is for an alveolar consonant. Think "sh" in English.<div class="references"><a href="http://en.wikipedia.org/wiki/Post-alveolar_consonant">Post alveolar consonants on Wikipedia</a></div></dd>
+		<dt>retroflex</dt>
+			<dd>Wikipedia says this type of consonant requires a flat, concave, or curled tongue, and your tongue is somewhere around the middle of the top of your mouth. However, English doesn't have an retroflex consonant sounds (at least, Wikipedia says there aren't) so I'm not really sure what this sound is. Will update as I learn more.<div class="references"><a href="http://en.wikipedia.org/wiki/Retroflex_consonant">Post alveolar consonants on Wikipedia</a></div></dd>
+		<dt>palatal</dt>
+			<dd>This is a consonant pronounced by placing the body of your tongue near the middle of the roof of your mouth. Try the "y" sound of "yes".<div class="references"><a href="http://en.wikipedia.org/wiki/Palatal_consonant">Palatal consonants on Wikipedia</a></div></dd>
+		<dt>velar</dt>
+			<dd>This is a consonant pronounced by moving the back part of your tongue towards the back of the roof of your mouth. Try the "ng" sound in English.<div class="references"><a href="http://en.wikipedia.org/wiki/Velar_consonant">Velar consonants on Wikipedia</a></div></dd>
+		<dt>uvular</dt>
+			<dd>This type of consonant pronounced by moving the back of your tongue towards the uvula, in the very back of your mouth. English doesn't have any sounds like this though.<div class="references"><a href="http://en.wikipedia.org/wiki/Uvular_consonant">Uvular consonants on Wikipedia</a></div></dd>
+		<dt>pharyngeal</dt>
+			<dd>A pharyngeal consonant is pronounced but putting the root of the tongue against the pharynx, in the very back of your mouth where your mouth meets your throat/nasal cavity. English doesn't have any pharyngeal consonants.<div class="references"><a href="http://en.wikipedia.org/wiki/Pharyngeal_consonant">Pharyngeal consonants on Wikipedia</a></div></dd>
+		<dt>glottal</dt>
+			<dd>Also called laryngeal consonants, these are pronounced using the glottis, the space between the vocal chords. For example, the English "h" (as in "hat") is pronounced by closing the space between the vocal chords.<div class="references"><a href="http://en.wikipedia.org/wiki/Glottal_consonant">Glottal consonants on Wikipedia</a></div></dd>
+		<dt>plosive</dt>
+			<dd>Also called a stop, this type of sound is when airflow is blocked, either using the tongue, lips, or glottis (vocal chords).<div class="references"><a href="http://en.wikipedia.org/wiki/Plosive">Plosives on Wikipedia</a></div></dd>
+		<dt>nasal</dt>
+			<dd>To produce a nasal consonant, the soft palate lowers, directing air to escape through the nose.<div class="references"><a href="http://en.wikipedia.org/wiki/Nasal_occlusive">Nasal consonants on Wikipedia</a></div></dd>
+		<dt>trill</dt>
+			<dd>A trill is produced when airflow causes the place of articulation &ndash; the column headings, either the tongue, lips, or uvula &ndash; to vibrate. A good example is the rolled "r" in Spanish.<div class="references"><a href="http://en.wikipedia.org/wiki/Trill_consonant">Trills on Wikipedia</a></div></dd>
+		<dt>flap</dt>
+			<dd>Also called a tap, this is where sound is made by the impact of the articulator (the column headings) against another part of your mouth. For example, hitting the tongue against the roof of the mouth.<div class="references"><a href="http://en.wikipedia.org/wiki/Flap_consonant">Flap consonants on Wikipedia</a></div></dd>
+		<dt>fricative</dt>
+			<dd>This sound is pronounced by restricting the airflow between the articulator (the column headings) and another part of the mouth. For example, the upper teeth against the lower lip (English "f" or "v").<div class="references"><a href="http://en.wikipedia.org/wiki/Fricative">Fricatives on Wikipedia</a></div></dd>
+		<dt>lateral fricative</dt>
+			<dd>A lateral consonant is where air flows through the sides of the mouth, with the center blocked by the tongue. A lateral fricative, then, is when this air is forced through the remaining space.<br /><br />But because these sounds aren't present in English, I'm not totally clear on what they are.<div class="references"><a href="http://en.wikipedia.org/wiki/Lateral_consonant">Lateral consonants on Wikipedia</a></div></dd>
+		<dt>approximant</dt>
+			<dd>An approximant is when articulators (the column headings) approach each other but aren't close enough to restrict airflow or cause airflow to be forced through the remaining space.<div class="references"><a href="http://en.wikipedia.org/wiki/Approximant_consonant">Approximants on Wikipedia</a></div></dd>
+		<dt>lateral approx.</dt>
+			<dd>A lateral consonant is where air flows through the sides of the mouth, with the center blocked by the tongue. A lateral approximant, then, is when the path through the center of the mouth is blocked by the tongue, but the remaining space between articulators is not restricted enough to force airflow.<div class="references"><a href="http://en.wikipedia.org/wiki/Lateral_approximant">Lateral consonants on Wikipedia</a></div></dd>
+	</dl>
+
+	<script src="mustache.js/mustache.js"></script>
+	<script src="jquery.js"></script>
+	<script src="ipa.js"></script>
+	<script src="ipa.json"></script>
+	<script>
+	$(function() {
+		createDefinitionBox();
+
+		ipa = sortIpa(ipa);
+		ipa.selected = ipa.characters[0];
+		$('#characters').html(Mustache.render($('#characters-template').html(), ipa));
+		$('#selected').html(Mustache.render($('#selected-template').html(), ipa.selected));
+		$('.character:first').addClass('selected');
+		$('.character').click(setSelected);
+	});
+	</script>
+</body>
+</html>

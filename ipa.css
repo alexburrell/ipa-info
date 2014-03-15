@@ -116,6 +116,66 @@ img {
 
 .cell.blank {}
 
+.character {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.6em;
+	line-height: 1.5em;
+	text-align: center;
+	border-top: solid 5px #FFF;
+	font-size: 1.8em;
+	background: #DFDFDF;
+}
+
+.character:hover {
+	cursor: pointer;
+}
+
+.character.selected {
+	background: gold;
+}
+
+#selected {
+	border: solid 1px;
+	width: 260px;
+	margin: 0 auto;
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-sticky;
+	top: 5px;
+	background: #FFF;
+	padding: 15px 10px;
+	margin-top: 15px;
+	height: 200px;
+}
+
+#selected .selected-character {
+	font-size: 100px;
+	display: inline-block;
+	vertical-align: top;
+	width: 80px;
+	line-height: 150px;
+	text-align: center;
+}
+
+#selected .details {
+	display: inline-block;
+}
+
+#selected .details code {
+	font-size: 1.5em;
+}
+
+#types {
+	text-align: center;
+	padding: 0;
+}
+
+#types li {
+	display: inline-block;
+}
+
 /* FOOTER */
 footer {
 	border: solid 2px;
